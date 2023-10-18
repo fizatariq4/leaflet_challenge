@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leaflet Step-1</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" />
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body></body>
+  <!-- The div that holds our map -->
+  <div id="map"></div>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+  <!--attempting to add legend styling through html -->
+  <div id="legend" class="legend">
+    <h4>Legend</h4>
+    <div><span class="dot" style="background-color: #ea2c2c;"></span> Depth &gt; 90 km</div>
+    <div><span class="dot" style="background-color: #ea822c;"></span> 70 km &lt; Depth &le; 90 km</div>
+    <div><span class="dot" style="background-color: #ee9c00;"></span> 50 km &lt; Depth &le; 70 km</div>
+    <div><span class="dot" style="background-color: #eecc00;"></span> 30 km &lt; Depth &le; 50 km</div>
+    <div><span class="dot" style="background-color: #d4ee00;"></span> 10 km &lt; Depth &le; 30 km</div>
+    <div><span class="dot" style="background-color: #98ee00;"></span> Depth &le; 10 km</div>
+</div>
+</body>
+
+</html>
